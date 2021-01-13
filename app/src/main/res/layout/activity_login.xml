@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200">
+
+    <ImageView
+        android:id="@+id/loginimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:src="@drawable/loginbackground"
+        />
+
+    <ImageView
+        android:id="@+id/loginimageview1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textaccount"
+            android:layout_width = "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="    账号："
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="请输入账号"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textkeywords"
+            android:layout_width = "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="    密码："
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/keywords"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="请输入密码"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textipaddress"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="服务器IP地址："
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/ipaddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="[2001:da8:270:2021::f9]"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/signinbtn"
+            android:layout_width = "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="注册"
+
+            />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="登录"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/loginnonimageview2"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本程序支持Ipv6协议"
+            android:gravity="center"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/checkkey"-->
+<!--        android:layout_width="53dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="0.2"-->
+<!--        android:gravity="center"-->
+<!--        android:text="密码"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="18dp" />-->
+
+
+</LinearLayout>

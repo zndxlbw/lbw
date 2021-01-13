@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/car_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#474547">
+
+
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择目标载运车："
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/selectcar_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入要查询的载运车序号"/>
+
+<!--        <Spinner-->
+<!--            android:id="@+id/select_view"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="match_parent" />-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendresponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取数据" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dest_view"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="目的地："
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_dest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="null"
+            android:textSize="18dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/start_view"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="出发地："
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="null"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ele_view"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="剩余电量："
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_ele"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="null"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/state_view"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="状态："
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="null"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/x_view"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="X轴坐标："
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_location_x"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="null"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/y_view"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Y轴坐标："
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_location_y"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="null"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/num_view"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="坐标序号："
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_location_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="null"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/veolcity_view"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="行驶速度："
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_veolcity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="null"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id_view"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="故障信息："
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="null"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止读取数据" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textusername"
+            android:layout_width = "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="    用户名："
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="请输入待注册账号"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textpassword"
+            android:layout_width = "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="    密   码："
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="请输入登录密码"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textrepassword"
+            android:layout_width = "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="    确认密码："
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="请再输入一遍登录密码"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textname"
+            android:layout_width = "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="    姓   名："
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="请输入注册者姓名"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textnumber"
+            android:layout_width = "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="    工   号："
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="请输入注册者工号"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/right_number_text"
+            android:layout_width = "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="    授权码："
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/right_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="请输入注册允许授权码"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signinbtn"
+        android:layout_gravity="center"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textSize = "18dp"
+        android:text="注册"/>
+</LinearLayout>
